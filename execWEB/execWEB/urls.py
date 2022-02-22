@@ -19,5 +19,6 @@ from execWEB     import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('greeting/',views.greeting)
+    path('greeting/',views.greeting),
+    path('index/',views.index)
 ]
