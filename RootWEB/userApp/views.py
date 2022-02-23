@@ -7,3 +7,13 @@ def index(request):
 
 def login(request):
     print(">>>>>>>> user login")
+    if request.method == 'POST':
+        print('>>>> request post')
+        id = request.POST['id']
+        pwd = request.POST['pwd']
+        # model - DB(Select)
+        context = {'key':'value'}
+        print('>>>> request param - ',id,pwd)
+    else :
+        print('>>>> request get')
+        # request.GET['id']
